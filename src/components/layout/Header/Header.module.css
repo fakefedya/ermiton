@@ -10,7 +10,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	gap: 10px;
+	gap: 15px;
 }
 
 .link {
@@ -33,7 +33,7 @@
 	&.home {
 		background: var(--blue);
 		color: var(--white);
-		padding: 16px;
+		padding: 20px 24px;
 
 		img {
 			height: 20px;
