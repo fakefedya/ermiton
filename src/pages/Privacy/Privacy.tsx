@@ -1,3 +1,3 @@
-export const Privacy = () => {
+export function Privacy() {
 	return <section>Privacy</section>
 }

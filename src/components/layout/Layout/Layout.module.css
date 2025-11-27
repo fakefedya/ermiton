@@ -2,4 +2,9 @@
 	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center -150px, center top;
+	background-image: url('./images/cars.png'), url('./icons/header.svg');
+	background-size: 100% auto, 100% auto;
 }

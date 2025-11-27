@@ -1,18 +1,13 @@
-import React from 'react'
 import { Header } from '../Header/Header'
 import { Footer } from '../Footer/Footer'
-
+import type { ILayoutProps } from './Layout.props'
 import styles from './Layout.module.css'
 
-interface LayoutProps {
-	children: React.ReactNode
-}
-
-export const Layout: React.FC<LayoutProps> = ({ children }) => {
+export function Layout({ children }: ILayoutProps) {
 	return (
 		<div className={styles.layout}>
 			<Header />
-			<main>{children}</main>
+			<main className={styles.main}>{children}</main>
 			<Footer />
 		</div>
 	)
