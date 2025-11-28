@@ -1,0 +1,73 @@
+.section {
+	max-width: 575px;
+	width: 100%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	gap: 35px;
+	padding: 0 20px;
+}
+
+.brand-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 10px 15px;
+}
+
+.page-header {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	text-align: center;
+}
+
+.subheading {
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 120%;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
+}
+
+.benefit {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	padding-left: 15px;
+	border-left: 6px solid;
+	border-top-left-radius: 6px;
+	border-bottom-left-radius: 6px;
+
+	&.first {
+		border-color: var(--blue);
+		color: var(--blue);
+	}
+
+	&.second {
+		border-color: var(--green-dark);
+		color: var(--green-dark);
+	}
+
+	&.third {
+		border-color: var(--orange);
+		color: var(--orange);
+	}
+}
+
+.benefit-heading {
+	font-style: italic;
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 120%;
+}
+
+.benefit-text {
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 120%;
+}

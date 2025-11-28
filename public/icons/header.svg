@@ -11,8 +11,8 @@
 <feGaussianBlur stdDeviation="60" result="effect1_foregroundBlur_32_15"/>
 </filter>
 <linearGradient id="paint0_linear_32_15" x1="-80" y1="150.5" x2="1486" y2="150.5" gradientUnits="userSpaceOnUse">
-<stop stop-color="#00FFCF"/>
-<stop offset="1" stop-color="#0076CE"/>
+<stop stop-color="#6CAFEC"/>
+<stop offset="1" stop-color="#13C4A3"/>
 </linearGradient>
 <clipPath id="clip0_32_15">
 <rect width="1440" height="483" fill="white"/>

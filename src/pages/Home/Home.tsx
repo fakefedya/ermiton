@@ -1,7 +1,13 @@
+import { Benefits } from './sections/Benefits/Benefits'
+import { Brands } from './sections/Brands/Brands'
+import { Hero } from './sections/Hero/Hero'
+
 export function Home() {
 	return (
-		<section>
-			<p>Test</p>
-		</section>
+		<>
+			<Hero />
+			<Brands />
+			<Benefits />
+		</>
 	)
 }

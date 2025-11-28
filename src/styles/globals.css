@@ -3,13 +3,40 @@
 
 :root {
 	--font: 'Inter', sans-serif;
+	--gray: #ebebeb;
 	--white: #fff;
 	--black: #000;
 	--green: #71d389;
 	--green-dark: #006c0c;
 	--blue: #3a55b4;
+	--orange: #f1782f;
+
+	--shadow-card: 0px 36px 52px 0px rgba(0, 0, 0, 0.06);
+	--shadow-nav: 0px 36px 52px 0px rgba(0, 0, 0, 0.2);
 }
 
 html {
 	font-family: var(--font);
+}
+
+body {
+	background: var(--gray);
+}
+
+h1 {
+	font-size: 32px;
+	line-height: 32px;
+	font-weight: 700;
+}
+
+h2 {
+	font-size: 48px;
+	font-weight: 700;
+	line-height: 110%;
+	letter-spacing: -0.06em;
+}
+
+p {
+	font-size: 18px;
+	font-weight: 500;
 }

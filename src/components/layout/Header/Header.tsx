@@ -6,7 +6,7 @@ export const Header = () => {
 	return (
 		<header className={styles.header}>
 			<nav className={styles.nav}>
-				<Link to={'/'} className={cn(styles.link, styles.home)}>
+				<Link to={'/#hero'} className={cn(styles.link, styles.home)}>
 					<img src='./icons/home.svg' alt='Иконка домой' />
 				</Link>
 				<Link to={'/privacy'} className={cn(styles.link, styles.kp)}>
