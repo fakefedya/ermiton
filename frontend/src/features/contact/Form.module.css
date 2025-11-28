@@ -12,3 +12,17 @@
 	margin-bottom: 32px;
 	opacity: 0.65;
 }
+
+.field {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+
+	span {
+		height: 30px;
+		font-size: 20px;
+		text-align: center;
+		font-weight: 500;
+		color: #f33;
+	}
+}

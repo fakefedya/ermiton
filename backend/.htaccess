@@ -1,0 +1,14 @@
+Options -Indexes
+AddDefaultCharset utf-8
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # Если файл существует — отдаём
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule . - [L]
+
+  # Иначе отдаём index.html (SPA)
+  RewriteRule ^ index.html [L]
+</IfModule>

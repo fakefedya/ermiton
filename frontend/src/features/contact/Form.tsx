@@ -1,21 +1,18 @@
 // src/features/contact/Form.tsx (или ContactForm.tsx)
-import { useState } from 'react'
 import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
-
+import { toast } from '../../components/ui/Toast/Toast'
 import { Input } from '../../components/ui/Input/Input'
 import { Button } from '../../components/ui/Button/Button'
+import { contactSchema, type ContactFormValues } from './validation'
+import { sendContactForm } from '../../api/contactApi'
 
 import styles from './Form.module.css'
 import buttonStyles from '../../components/ui/Button/Button.module.css'
 
-import { contactSchema, type ContactFormValues } from './validation'
 // import { sendContactForm } from '../../api/contactApi'; // подключишь, когда будет бэкенд
 
 export function ContactForm() {
-	const [serverError, setServerError] = useState<string | null>(null)
-	const [isSuccess, setIsSuccess] = useState(false)
-
 	const {
 		register,
 		handleSubmit,
@@ -31,23 +28,19 @@ export function ContactForm() {
 	})
 
 	const onSubmit = async (values: ContactFormValues) => {
-		setServerError(null)
-		setIsSuccess(false)
-
 		try {
-			// TODO: сюда подключишь реальный вызов API
-			// const response = await sendContactForm(values);
-			// if (!response.success) {
-			//   setServerError(response.message || 'Не удалось отправить заявку');
-			//   return;
-			// }
+			const response = await sendContactForm(values)
 
-			console.log('ВАЛИДНЫЕ ДАННЫЕ ФОРМЫ:', values) // временно
-			setIsSuccess(true)
+			if (!response.success) {
+				toast.error(response.message || 'Не удалось отправить заявку')
+				return
+			}
+
+			toast.success('Заявка отправлена! Проверьте почту.')
 			reset()
-		} catch (error) {
-			console.error(error)
-			setServerError('Произошла ошибка при отправке. Попробуйте позже.')
+		} catch (e) {
+			console.error(e)
+			toast.error('Ошибка отправки. Попробуйте позже.')
 		}
 	}
 
@@ -61,7 +54,7 @@ export function ContactForm() {
 				<Input
 					id='name'
 					autoComplete='name'
-					placeholder='ваше ФИО'
+					placeholder='Имя'
 					{...register('name')}
 					aria-invalid={!!errors.name}
 					aria-describedby={errors.name ? 'name-error' : undefined}
@@ -78,7 +71,7 @@ export function ContactForm() {
 					id='email'
 					type='email'
 					autoComplete='email'
-					placeholder='ваш e-mail'
+					placeholder='Почта'
 					{...register('email')}
 					aria-invalid={!!errors.email}
 					aria-describedby={errors.email ? 'email-error' : undefined}
@@ -89,16 +82,6 @@ export function ContactForm() {
 					</span>
 				)}
 			</div>
-
-			{serverError && (
-				<div className={styles['server-error']}>{serverError}</div>
-			)}
-
-			{isSuccess && (
-				<div className={styles.success}>
-					Заявка отправлена. Мы свяжемся с вами по указанному email.
-				</div>
-			)}
 
 			<Button
 				type='submit'
