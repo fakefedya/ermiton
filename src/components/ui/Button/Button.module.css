@@ -1,0 +1,19 @@
+.button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 32px;
+	border-radius: 64px;
+	font-size: 24px;
+	font-weight: 700;
+	transition: 0.35s opacity ease-in-out;
+
+	&:hover {
+		opacity: 0.85;
+	}
+}
+
+.contact-form-button {
+	background: var(--blue);
+	color: var(--white);
+}

@@ -40,7 +40,9 @@ export function Brands() {
 			</div>
 			<div className={styles['brand-list']}>
 				{brands.map((el) => (
-					<div className={styles.item}>{el}</div>
+					<div className={styles.item} key={el}>
+						{el}
+					</div>
 				))}
 			</div>
 		</section>

@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom'
 import styles from './Hero.module.css'
 import cn from 'classnames'
 
@@ -14,9 +13,9 @@ export function Hero() {
 					Поставляем от дилеров напрямую. Ориентируемся на долгосрочное
 					сотрудничество.
 				</p>
-				<Link to={'#test'} className={styles.action}>
+				<a href='/#cta' className={styles.action}>
 					<div className={styles['action-button']}>Связаться</div>
-				</Link>
+				</a>
 			</div>
 		</section>
 	)

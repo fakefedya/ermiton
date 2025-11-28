@@ -1,0 +1,14 @@
+.form {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.form-heading {
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 120%;
+	text-align: center;
+	margin-bottom: 32px;
+	opacity: 0.65;
+}
