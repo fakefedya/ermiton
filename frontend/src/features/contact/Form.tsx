@@ -10,8 +10,6 @@ import { sendContactForm } from '../../api/contactApi'
 import styles from './Form.module.css'
 import buttonStyles from '../../components/ui/Button/Button.module.css'
 
-// import { sendContactForm } from '../../api/contactApi'; // подключишь, когда будет бэкенд
-
 export function ContactForm() {
 	const {
 		register,

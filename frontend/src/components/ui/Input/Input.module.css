@@ -9,4 +9,12 @@
 	font-weight: 600;
 	line-height: 120%;
 	text-align: center;
+
+	&[aria-invalid='true'] {
+		border: 2px solid red;
+	}
+
+	&[aria-invalid='false'] {
+		border: 2px solid transparent;
+	}
 }
