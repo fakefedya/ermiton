@@ -1,4 +1,4 @@
-import { Outlet } from 'react-router-dom'
+import { AnimatedOutlet } from '../../router/AnimatedOutlet'
 import { Header } from '../../components/layout/Header/Header'
 import { Footer } from '../../components/layout/Footer/Footer'
 
@@ -9,7 +9,7 @@ export function PrivacyLayout() {
 		<div className={styles.layout}>
 			<Header />
 			<main className={styles.main}>
-				<Outlet />
+				<AnimatedOutlet />
 			</main>
 			<Footer />
 		</div>

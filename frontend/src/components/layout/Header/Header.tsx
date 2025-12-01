@@ -16,9 +16,13 @@ export const Header = () => {
 				>
 					Получить КП
 				</a>
-				<Link to={'/asd'} className={cn(styles.link, styles.wa)}>
+				<a
+					href='https://wa.me/+79313576999'
+					target='_blank'
+					className={cn(styles.link, styles.wa)}
+				>
 					WhatsApp
-				</Link>
+				</a>
 			</nav>
 		</header>
 	)
