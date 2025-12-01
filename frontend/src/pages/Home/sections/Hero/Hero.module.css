@@ -12,10 +12,10 @@
 	display: flex;
 	flex-direction: column;
 	gap: 25px;
-	background: linear-gradient(#a0e1de, #63a6e1, #63a6e1);
+	background: linear-gradient(#ff9a41, #ff7509, #ff7509);
 	box-shadow: var(--shadow-card);
 	border-radius: 64px;
-	padding: 48px 32px 32px;
+	padding: 48px 32px 0;
 	transform: rotate(2deg);
 }
 
@@ -43,15 +43,15 @@
 .action {
 	position: relative;
 	width: 100%;
-	background: #66aeee;
+	background: #ff7509;
 	border-radius: 32px;
-	padding: 20px;
+	padding: 35px;
 	overflow: hidden;
 }
 
 .action-button {
 	border-radius: 16px;
-	background: #66aeee;
+	background: #ff7509;
 	padding: 20px;
 	display: flex;
 	align-items: center;
@@ -75,7 +75,7 @@
 @media (max-width: 959px) {
 	.card {
 		max-width: 100%;
-		padding: 32px 16px 16px;
+		padding: 32px 16px 0;
 		border-radius: 32px;
 		transform: rotate(1deg);
 	}
@@ -87,7 +87,7 @@
 	}
 
 	.action {
-		padding: 10px;
+		padding: 25px;
 		border-radius: 16px;
 	}
 
