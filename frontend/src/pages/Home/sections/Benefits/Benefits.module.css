@@ -75,3 +75,22 @@
 	font-weight: 700;
 	line-height: 120%;
 }
+
+@media (max-width: 959px) {
+	.subheading {
+		font-size: 18px;
+		font-weight: 500;
+	}
+
+	.benefit {
+		padding: 16px;
+	}
+
+	.benefit-heading {
+		font-size: 18px;
+	}
+
+	.benefit-text {
+		font-size: 16px;
+	}
+}

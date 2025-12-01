@@ -17,3 +17,11 @@
 	background: var(--blue);
 	color: var(--white);
 }
+
+@media (max-width: 959px) {
+	.button {
+		border-radius: 16px;
+		font-size: 21px;
+		padding: 16px;
+	}
+}

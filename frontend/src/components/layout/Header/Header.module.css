@@ -50,3 +50,29 @@
 		color: var(--green-dark);
 	}
 }
+
+@media (max-width: 959px) {
+	.header {
+		top: 25px;
+	}
+
+	.nav {
+		gap: 10px;
+		flex-wrap: wrap;
+	}
+
+	.link {
+		padding: 8px 12px;
+		font-size: 21px;
+		line-height: 100%;
+		white-space: nowrap;
+
+		&.home {
+			padding: 8px 12px;
+
+			& img {
+				height: 21px;
+			}
+		}
+	}
+}

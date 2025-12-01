@@ -103,7 +103,9 @@ export function Privacy() {
 	return (
 		<section className={cn(styles.section, styles.privacy)}>
 			<div className={styles.header}>
-				<h1 className={styles.heading}>Политика конфиденциальности</h1>
+				<h1 className={styles.heading}>
+					Политика обработки персональных данных
+				</h1>
 				<p className={styles.subheading}>Обновлено: «02» декабря 2025</p>
 			</div>
 			<div className={styles.text}>

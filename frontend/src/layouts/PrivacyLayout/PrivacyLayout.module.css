@@ -13,3 +13,13 @@
 	gap: 110px;
 	padding-top: 50px;
 }
+
+@media (max-width: 959px) {
+	.layout {
+		gap: 80px;
+	}
+
+	.main {
+		padding-top: 0;
+	}
+}

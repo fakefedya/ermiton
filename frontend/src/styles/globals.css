@@ -40,3 +40,19 @@ p {
 	font-size: 18px;
 	font-weight: 500;
 }
+
+@media (max-width: 959px) {
+	h1 {
+		font-size: 28px;
+		line-height: auto;
+	}
+
+	h2 {
+		font-size: 32px;
+		line-height: auto;
+	}
+
+	p {
+		font-size: 16px;
+	}
+}

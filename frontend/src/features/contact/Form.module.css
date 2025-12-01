@@ -26,3 +26,16 @@
 		color: #f33;
 	}
 }
+
+@media (max-width: 959px) {
+	.form-heading {
+		font-size: 18px;
+	}
+
+	.field {
+		span {
+			font-size: 16px;
+			height: auto;
+		}
+	}
+}

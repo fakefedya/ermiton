@@ -71,3 +71,29 @@
 			-2px -2px 4px 0 rgba(255, 255, 255, 0.5) inset;
 	}
 }
+
+@media (max-width: 959px) {
+	.card {
+		max-width: 100%;
+		padding: 32px 16px 16px;
+		border-radius: 32px;
+		transform: rotate(1deg);
+	}
+
+	.image {
+		img {
+			max-width: 150px;
+		}
+	}
+
+	.action {
+		padding: 10px;
+		border-radius: 16px;
+	}
+
+	.action-button {
+		font-size: 21px;
+		padding: 16px;
+		border-radius: 6px;
+	}
+}

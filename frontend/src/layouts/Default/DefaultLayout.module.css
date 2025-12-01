@@ -20,3 +20,17 @@
 	flex-direction: column;
 	gap: 110px;
 }
+
+@media (max-width: 959px) {
+	.layout {
+		gap: 80px;
+	}
+
+	.main {
+		padding-top: 0;
+	}
+
+	.motionDiv {
+		gap: 75px;
+	}
+}

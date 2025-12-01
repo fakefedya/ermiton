@@ -37,3 +37,18 @@
 		transform: translateY(0);
 	}
 }
+
+@media (max-width: 959px) {
+	.container {
+		width: 100%;
+		left: 50%;
+		transform: translateX(-50%);
+		right: unset;
+		padding: 0 20px;
+	}
+
+	.toast {
+		font-size: 16px;
+		padding: 10px 10px;
+	}
+}

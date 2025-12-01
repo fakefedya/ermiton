@@ -37,3 +37,20 @@
 	color: #00000067;
 	background: var(--white);
 }
+
+@media (max-width: 959px) {
+	.subheading {
+		font-size: 18px;
+		font-weight: 500;
+	}
+
+	.brand-list {
+		gap: 10px;
+	}
+
+	.item {
+		font-size: 16px;
+		padding: 8px 10px;
+		border-radius: 16px;
+	}
+}

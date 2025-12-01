@@ -18,3 +18,10 @@
 		border: 2px solid transparent;
 	}
 }
+
+@media (max-width: 959px) {
+	.input {
+		padding: 16px;
+		font-size: 18px;
+	}
+}

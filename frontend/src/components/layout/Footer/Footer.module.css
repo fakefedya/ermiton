@@ -31,3 +31,9 @@
 		text-decoration: underline;
 	}
 }
+
+@media (max-width: 959px) {
+	.footer {
+		margin-bottom: 25px;
+	}
+}
