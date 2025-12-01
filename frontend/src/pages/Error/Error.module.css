@@ -28,4 +28,8 @@
 	line-height: 18px;
 	font-weight: 500;
 	transition: 0.35s opacity ease-in-out;
+
+	&:hover {
+		opacity: 0.85;
+	}
 }

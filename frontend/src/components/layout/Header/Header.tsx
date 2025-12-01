@@ -9,9 +9,13 @@ export const Header = () => {
 				<Link to={'/'} className={cn(styles.link, styles.home)}>
 					<img src='./icons/home.svg' alt='Иконка домой' />
 				</Link>
-				<Link to={'/privacy'} className={cn(styles.link, styles.kp)}>
+				<a
+					href='/documents/kp.pdf'
+					download
+					className={cn(styles.link, styles.kp)}
+				>
 					Получить КП
-				</Link>
+				</a>
 				<Link to={'/asd'} className={cn(styles.link, styles.wa)}>
 					WhatsApp
 				</Link>

@@ -37,7 +37,7 @@ $email    = trim((string)($data['email'] ?? ''));
 
 // простая валидация
 if (mb_strlen($name) < 2) {
-    echo json_encode(['success'=>false,'message'=>'Некорректное ФИО']);
+    echo json_encode(['success'=>false,'message'=>'Некорректное имя']);
     exit;
 }
 if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {

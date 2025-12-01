@@ -26,4 +26,8 @@
 	font-size: 14px;
 	font-weight: 500;
 	opacity: 0.45;
+
+	&:hover {
+		text-decoration: underline;
+	}
 }

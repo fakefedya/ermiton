@@ -1,0 +1,30 @@
+.section {
+	max-width: 864px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
+}
+
+.header {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.subheading {
+	font-size: 16px;
+	color: #00000067;
+}
+
+.text {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+
+	p {
+		text-align: justify;
+	}
+}
