@@ -69,7 +69,7 @@ export function ContactForm() {
 					id='email'
 					type='email'
 					autoComplete='email'
-					placeholder='Почта'
+					placeholder='Email'
 					{...register('email')}
 					aria-invalid={!!errors.email}
 					aria-describedby={errors.email ? 'email-error' : undefined}
