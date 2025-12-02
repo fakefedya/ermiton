@@ -5,6 +5,7 @@ frontend/.env
 frontend/.env.local
 frontend/.env.*.local
 frontend/.vite/
+frontend/*.zip
 
 # BACKEND
 backend/config/mail.php
